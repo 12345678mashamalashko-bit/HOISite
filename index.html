@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hearts of Iron 4 - Статистический сайт</title>
+    <style>
+        /* Базовые стили */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Шапка сайта */
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Навигация */
+        nav {
+            background-color: #34495e;
+            padding: 0.5rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li {
+            margin: 0 1rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #1abc9c;
+            border-radius: 4px;
+        }
+
+        /* Основной контент */
+        main {
+            flex: 1;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        section {
+            margin-bottom: 2rem;
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #1abc9c;
+            padding-bottom: 0.5rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        /* Картинки */
+        .image-container {
+            margin: 1rem 0;
+            text-align: center;
+        }
+
+        .image-placeholder {
+            width: 100%;
+            max-width: 600px;
+            height: 300px;
+            background-color: #ecf0f1;
+            border: 2px dashed #bdc3c7;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            border-radius: 5px;
+        }
+
+        .image-placeholder p {
+            color: #7f8c8d;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 5px;
+        }
+
+        /* Подвал */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: auto;
+        }
+
+        /* Стили для страниц разделов */
+        .page-content {
+            display: none;
+        }
+
+        .active {
+            display: block;
+        }
+
+        /* Адаптивность */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav li {
+                margin: 0.5rem 0;
+            }
+
+            main {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Hearts of Iron 4 - Статистический сайт</h1>
+        <p>Все о великой стратегии от Paradox Interactive</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showPage('home')">Главная</a></li>
+            <li><a href="#" onclick="showPage('about')">Об игре</a></li>
+            <li><a href="#" onclick="showPage('mechanics')">Механики и DLC</a></li>
+            <li><a href="#" onclick="showPage('countries')">Интересные страны</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Главная страница -->
+        <div id="home" class="page-content active">
+            <section>
+                <h2>Добро пожаловать на сайт по Hearts of Iron 4!</h2>
+                <p>Этот сайт посвящен великой стратегической игре Hearts of Iron 4 от Paradox Interactive. Здесь вы
+                    найдете информацию об игре, ее механиках, дополнениях и самых интересных странах для игры.</p>
+
+                <div class="image-container">
+                    <div class="image-placeholder">
+                        <p>Здесь будет картинка с логотипом Hearts of Iron 4</p>
+                    </div>
+                </div>
+
+                <p>Выберите интересующий вас раздел в меню навигации выше, чтобы узнать больше.</p>
+            </section>
+        </div>
+
+        <!-- Страница "Об игре" -->
+        <div id="about" class="page-content">
+            <section>
+                <h2>Об игре Hearts of Iron 4</h2>
+                <p>Hearts of Iron IV — это глобальная стратегическая игра, разработанная Paradox Development Studio и
+                    изданная Paradox Interactive. Игра охватывает период Второй мировой войны с 1936 по 1948 год.</p>
+
+                <div class="image-container">
+                    <div class="image-placeholder">
+                        <p>Здесь будет картинка с геймплеем Hearts of Iron 4</p>
+                    </div>
+                </div>
+
+                <p>В Hearts of Iron IV игроки берут на себя управление одной из стран-участниц Второй мировой войны.
+                    Игра предлагает глубокую проработку военных, экономических и политических аспектов управления
+                    государством в военное время.</p>
+
+                <p>Особенности игры:</p>
+                <ul>
+                    <li>Глубокие тактические и стратегические решения</li>
+                    <li>Развитая система исследований и производства</li>
+                    <li>Дипломатия и политические интриги</li>
+                    <li>Реалистичная карта мира с тысячами провинций</li>
+                    <li>Множество исторических событий и решений</li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- Страница "Механики и DLC" -->
+        <div id="mechanics" class="page-content">
+            <section>
+                <h2>Основные механики игры</h2>
+                <p>Hearts of Iron IV предлагает множество сложных и взаимосвязанных игровых механик, которые делают игру
+                    глубокой и увлекательной.</p>
+
+                <h3>Военные механики</h3>
+                <p>Система боя в Hearts of Iron IV основана на дивизиях, которые состоят из различных батальонов. Игроки
+                    могут проектировать собственные шаблоны дивизий, подбирая оптимальное сочетание пехоты, артиллерии,
+                    танков и поддержки.</p>
+
+                <div class="image-container">
+                    <div class="image-placeholder">
+                        <p>Здесь будет картинка с интерфейсом дизайна дивизий</p>
+                    </div>
+                </div>
+
+                <h3>Экономика и производство</h3>
+                <p>Экономическая система игры включает управление гражданскими и военными заводами, ресурсами и
+                    торговлей. Игроки должны балансировать между производством военной техники и развитием
+                    инфраструктуры.</p>
+
+                <h3>DLC и дополнения</h3>
+                <p>Paradox Interactive выпустила множество DLC для Hearts of Iron IV, которые добавляют новый контент,
+                    механики и возможности:</p>
+                <ul>
+                    <li>Together for Victory - фокус на Британском Содружестве</li>
+                    <li>Death or Dishonor - страны Балканского региона</li>
+                    <li>Waking the Tiger - переработанные фокусы для Германии, Китая и Японии</li>
+                    <li>Man the Guns - военно-морские силы и США</li>
+                    <li>La Resistance - шпионаж и Франция</li>
+                    <li>Battle for the Bosporus - Турция, Греция и Болгария</li>
+                </ul>
+
+                <div class="image-container">
+                    <div class="image-placeholder">
+                        <p>Здесь будет картинка с обложками DLC</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Страница "Интересные страны" -->
+        <div id="countries" class="page-content">
+            <section>
+                <h2>Интересные страны для игры</h2>
+                <p>В Hearts of Iron IV можно играть за любую страну мира, но некоторые из них предлагают особенно
+                    увлекательный игровой опыт.</p>
+
+                <h3>Германия</h3>
+                <p>Германия - одна из самых популярных стран для игры. Она обладает мощной промышленностью, сильной
+                    армией и уникальным деревом национальных фокусов, позволяющим следовать историческому пути или
+                    выбрать альтернативные варианты развития.</p>
+
+                <div class="image-container">
+                    <div class="image-placeholder">
+                        <p>Здесь будет картинка с немецкими танками</p>
+                    </div>
+                </div>
+
+                <h3>Советский Союз</h3>
+                <p>Советский Союз предлагает вызов управления огромной, но отстающей в технологическом отношении
+                    страной. Игроку предстоит провести индустриализацию, пережить Великую чистку и противостоять
+                    немецкому вторжению.</p>
+
+                <h3>Соединенные Штаты Америки</h3>
+                <p>США начинают игру с мощной экономикой, но ограниченной армией и сильным изоляционизмом. Игрок должен
+                    балансировать между подготовкой к войне и преодолением политических ограничений.</p>
+
+                <div class="image-container">
+                    <div class="image-placeholder">
+                        <p>Здесь будет картинка с американскими войсками</p>
+                    </div>
+                </div>
+
+                <h3>Необычные выборы</h3>
+                <p>Для опытных игроков интерес могут представлять менее очевидные страны:</p>
+                <ul>
+                    <li>Бразилия - возможность объединить Южную Америку</li>
+                    <li>Турция - стратегическое положение между Европой и Азией</li>
+                    <li>Австралия - участие в войне на Тихом океане</li>
+                    <li>Испания - Гражданская война и выбор пути развития</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>Статистический сайт по Hearts of Iron 4 &copy; 2023</p>
+    </footer>
+
+    <script>
+        // Функция для переключения между страницами
+        function showPage(pageId) {
+            // Скрыть все страницы
+            const pages = document.querySelectorAll('.page-content');
+            pages.forEach(page => {
+                page.classList.remove('active');
+            });
+
+            // Показать выбранную страницу
+            document.getElementById(pageId).classList.add('active');
+        }
+    </script>
+</body>
+
+</html>
